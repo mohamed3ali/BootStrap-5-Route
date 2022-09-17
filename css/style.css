@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-image: url(../img/bg.jpg);
+    background-size: cover;
+    background-position: center center;
+
+}
+.overlay {
+  background-color :rgba(0,0,0,0.7)
+}
+.header-info {
+    height:80vh;
+}
+.header-info h1{
+font-size: 55px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.header-info i{
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 2px;
+    background: transparent;
+    transition:.5s;
+}
+.header-info h4{
+    padding:2%;
+}
+.header-info h4::after {
+    content: '';
+    animation: loop 3s infinite alternate linear;
+    color: bisque;
+}
+
+@keyframes loop {
+    0% {
+        content: ' |';
+    }
+
+    25% {
+        content: ' D|';
+    }
+
+    40% {
+        content: ' De|';
+    }
+
+    50% {
+        content: ' Dev|';
+    }
+
+    60% {
+        content: ' Deve|';
+    }
+
+    70% {
+        content: ' Devel|';
+    }
+
+    80% {
+        content: ' Develo|';
+    }
+
+    90% {
+        content: ' Develop|';
+    }
+
+    95% {
+        content: ' Develope|';
+    }
+
+    100% {
+        content: ' Developer|';
+    }
+
+    
+}
+
+.header-info i:hover{
+background-color: rgb(138, 123, 123);
+padding: 12px;
+color: blue;
+}
+
+
+.about-word p{
+    color: rgb(107, 95, 95);
+}
+.about-word p span{
+    color: rgb(90, 84, 84);
+    font-size: 15px;
+    font-weight: bold;
+}
+.skills{
+    width: 100%;
+    padding: 2px 10px;
+    border-radius: 5px;
+    position: relative;
+background-color: #f7f7f7;
+}
+.skills h6
+{
+    font-size: 13px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+.skills .skills-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 90%;
+    color: #fff;
+    border-radius: 5px;
+    text-align: right;
+    background-color: #1c1c1c;
+    -webkit-transition: all 1s;
+    transition: all 1s
+}
+.skills .skills-2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 70%;
+    color: #fff;
+    
+    border-radius: 5px;
+    background-color: #1c1c1c;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    text-align: right;
+}
+.btn1{
+    padding-top: 30px;
+}
+.btn1 button {
+    padding: 10px;
+    background-color: #1c1c1c;
+    color: #f7f7f7;
+    border: none;
+    border-radius: 10px;
+    transition: .5s;
+}
+.btn1 button:hover {
+background-color:#f7f7f7 ;
+color: #1c1c1c;
+}
+.btn1 .btn-co{
+    background-color:#f7f7f7 ;
+color: #1c1c1c;
+}
+.btn1 .btn-co:hover{
+    background-color: #1c1c1c;
+    color: #f7f7f7;
+}
+.services{
+    background-color: rgb(244, 242, 242);
+}
+.service{
+    background-color: rgb(244, 242, 242);
+}
+.services i {
+    font-size: 40px;
+    border: 1px solid #4f4e4e;
+    padding: 10px;
+    background-color: rgb(244, 242, 242);
+    border-radius: 50%;
+    border: none;
+    color:#1c1c1c;
+    transition: .5s;
+}
+.services i:hover {
+    background-color: #1c1c1c;
+    color:rgb(244, 242, 242);
+ 
+}
+.port-links li
+{
+    cursor: pointer;
+}
+.port-contact{
+    position: relative;
+    
+}
+.port-contact-ind {
+    position:absolute;
+    top:35%;
+    left:35%;
+
+    opacity:0;
+    visibility:hidden;
+    transition:opacity 0.5s
+}
+.port-contact:hover .port-contact-ind{
+	opacity:1;
+	visibility:visible;
+
+}
+.compiler i{
+    font-size: 25px;
+}
+.compiler h4{
+    color: #4f4e4e;
+}
+.blog img:hover{
+    padding: 10px;
+    transition: .4s;
+}
+.conatct i{
+    border:1px solid #CCC;
+border-radius: 50%;
+padding: 10px;
+background-color: #CCC;
+font-size: 25px;
+transition: .4s;
+color: #1c1c1c;
+}
+.conatct i:hover{
+background-color: #1c1c1c;
+color: #ccc;
+}
+.cont-inp input
+{
+    width: 100%;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    background: #f4f4f4;
+}
+.cont-inp textarea{
+    width: 100%;
+    margin: 5px;
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    height: 20vh;
+    background: #f4f4f4;
+}
+.form .btn{
+background-color: #4f4e4e;
+color: #fff;
+font-weight: bold;
+padding: 10px;
+}
